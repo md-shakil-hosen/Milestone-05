@@ -3,11 +3,11 @@
 // for (let i = 0; i <= 6; i++) {
 //     console.log(i);
 // }
-const student = { name: 'Kismot Khan', age: 29, height: 60 };
-const blogTitles = document.getElementsByTagName('h3');
-for (const h3 of blogTitles) {
-    // console.log(h3.innerText);
-}
+// // const student = { name: 'Kismot Khan', age: 29, height: 60 };
+// // const blogTitles = document.getElementsByTagName('h3');
+// // for (const h3 of blogTitles) {
+// //     // console.log(h3.innerText);
+// }
 
 const blogDetails = document.getElementsByTagName('p');
 for (const p of blogDetails) {
@@ -43,4 +43,10 @@ for (const article of articles) {
     article.style.fontWeight = 'bold';
     article.style.lineHeight = '20px';
     article.style.margin = '5px';
+    article.style.borderRadius = '10px';
+}
+
+const blogTitles = document.getElementsByClassName('blogTitle');
+for (const blogTitle of blogTitles) {
+    blogTitle.style.textAlign = 'center';
 }
