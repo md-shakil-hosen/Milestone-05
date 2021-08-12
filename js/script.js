@@ -14,6 +14,7 @@ for (const p of blogDetails) {
     // console.log(p.innerText);
 }
 
+// heading 
 const headingTitle = document.getElementById('headingTitle');
 headingTitle.style.textAlign = 'center';
 headingTitle.style.fontFamily = 'sans-serif';
@@ -24,6 +25,7 @@ headingTitle.style.padding = '10px'
 headingTitle.style.marginLeft = '25%';
 headingTitle.style.marginRight = '25%';
 headingTitle.style.borderRadius = '30px';
+// one Blog 
 const blogs = document.getElementById('blogs');
 blogs.style.backgroundColor = 'red';
 blogs.style.padding = '20px';
@@ -31,3 +33,14 @@ blogs.style.color = 'white';
 blogs.style.fontWeight = 'bold';
 blogs.style.fontFamily = 'sans-serif';
 blogs.style.lineHeight = '20px';
+
+// getElementsByClassName 
+const articles = document.getElementsByClassName('article');
+for (const article of articles) {
+    article.style.backgroundColor = 'red';
+    article.style.padding = '20px';
+    article.style.color = 'white';
+    article.style.fontWeight = 'bold';
+    article.style.lineHeight = '20px';
+    article.style.margin = '5px';
+}
